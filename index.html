@@ -1,11 +1,1361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Game</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página Game</title>
+
+   <!-- Carga de fuentes -->
+   <link rel="stylesheet" href="./assets/fonts/montserrat/montserrat.css">
+
+   <!-- Carga de iconos Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <!-- Cargar estilos -->
+   <link rel="stylesheet" href="./assets/css/reset.css">
+   <link rel="stylesheet" href="./assets/css/styles.css">
+
+   <!-- Cargar javascript -->
+
 </head>
 <body>
-    
+   <!-- Barra superior decorativa -->
+   <div class="decoration-bar"></div>
+
+   <!-- Estructura principal -->
+   <div class="layout">
+      <!-- Cabecera  -->
+      <header class="layout__header">
+         <div class="header__title">
+            <a class="header__link" href="#">
+               <img class="header__img" src="./assets/img/logo1.png" alt="Logo Principal de la página">
+            </a>
+         </div>
+      </header>
+      <!-- Navegación -->
+      <section class="layout__nav">
+         <nav class="nav__navbar">
+            <ul class="navbar__list">
+               <li class="navbar__item">
+                  <a class="navbar__link" href="#">NOTICIAS</a>
+                  <!-- Submenu -->
+                  <div class="navbar__submenu">
+                     <!-- Lista despegable -->
+                     <ul class="navbar__sublist">
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">VIDEOJUEGOS</a>
+                        </li>
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">NOVEDADES</a>
+                        </li>
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">OTROS</a>
+                           <!-- Submenu del submenu -->
+                           <ul class="sublist__dropdown">
+                              <li class="dropdown__item">
+                                 <a class="dropdown__link" href="#">Cine</a>
+                              </li>
+                              <li class="dropdown__item">
+                                 <a class="dropdown__link" href="#">TECNOLOGÍA</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                     <!-- Carrusel de imagenes -->
+                     <div class="submenu__caruousel">
+                        <ul class="carousel__menu carousel__menu--small">
+                           <li class="carousel__item">
+                              <div class="item__container-img">
+                                 <div class="carousel__detail">
+                                    <h3 class="carousel__title">
+                                       <a class="carousel__link" href="#">¿Battlefield 2024 es el mejor de la saga?</a>
+                                    </h3>
+                                 </div>
+                                 <img class="carousel__img" src="./assets/img/game-1.jpg" alt="imagen submenu1">
+                                 <div class="carousel__container-rating">
+                                    <p class="container-rating__mark">9.7</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="carousel__item">
+                              <div class="item__container-img">
+                                 <div class="carousel__detail">
+                                    <h3 class="carousel__title">
+                                       <a class="carousel__link" href="#">¿Elden Rubg es el mejor juego del año?</a>
+                                    </h3>
+                                 </div>
+                                 <img class="carousel__img" src="./assets/img/game-2.webp" alt="imagen submenu2">
+                                 <div class="carousel__container-rating">
+                                    <p class="container-rating__mark">9.7</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="carousel__item">
+                              <div class="item__container-img">
+                                 <div class="carousel__detail">
+                                    <h3 class="carousel__title">
+                                       <a class="carousel__link" href="#">¿The last of 1 remake vs original?</a>
+                                    </h3>
+                                 </div>
+                                 <img class="carousel__img" src="./assets/img/game-3.jpg" alt="imagen submenu3">
+                                 <div class="carousel__container-rating">
+                                    <p class="container-rating__mark">8.4</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="carousel__item">
+                              <div class="item__container-img">
+                                 <div class="carousel__detail">
+                                    <h3 class="carousel__title">
+                                       <a class="carousel__link" href="#">Review Dying light 2</a>
+                                    </h3>
+                                 </div>
+                                 <img class="carousel__img" src="./assets/img/game-4.jpg" alt="imagen submenu1">
+                                 <div class="carousel__container-rating">
+                                    <p class="container-rating__mark">9.2</p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="navbar__item">
+                  <a class="navbar__link" href="#">ANALISIS</a>
+                  <!-- Submenu -->
+                  <div class="submenu__caruousel">
+                     <ul class="carousel__menu carousel__menu--small">
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Sifu el juego de peleas más dificil</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-5.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.5</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Trailer Fifa 23</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-6.png" alt="imagen submenu2">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">6.0</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">¿Multiversus es mejor que Super Smash Bros?</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-7.png" alt="imagen submenu3">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">8.7</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Review Gran turismo 7</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-14.jpeg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">5.4</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Detalles alucinantes Forza Horizon 5</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-9.webp" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.1</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="navbar__item">
+                  <a class="navbar__link" href="#">JUEGOS</a>
+                  <!-- Submenu -->
+                  <div class="submenu__caruousel">
+                     <ul class="carousel__menu carousel__menu--small">
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Review Ratchet & Clank: una Dimensión Aparte</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-10.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.5</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Valorant es mejor que CSGO</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-19.jpg" alt="imagen submenu2">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">6.0</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">¿Farcry 6 es el mejor de la saga?</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-11.jpg" alt="imagen submenu3">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">8.7</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Gameplay Residen Evil Village</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-12.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">5.4</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Its take two el mejor del año</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-13.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.1</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="navbar__item">
+                  <a class="navbar__link" href="#">CATEGORIAS</a>
+                  <!-- Submenu -->
+                  <div class="navbar__submenu navbar__submenu--small">
+                     <!-- Lista despegable -->
+                     <ul class="navbar__sublist">
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">ACCIÓN</a>
+                        </li>
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">SANDBOX</a>
+                           <!-- Submenú del submenu -->
+                           <ul class="sublist__dropdown">
+                              <li class="dropdown__item">
+                                 <a class="dropdown__link" href="#">AVENTURAS</a>
+                              </li>
+                              <li class="dropdown__item">
+                                 <a class="dropdown__link" href="#">CONDUCCIÓN</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">LUCHA</a>
+                        </li>
+                        <li class="sublist__item">
+                           <a class="sublist__link" href="#">CARRERAS</a>
+                        </li>
+                     </ul>
+                  </div>   
+               </li>
+               <li class="navbar__item">
+                  <a class="navbar__link" href="#">RANKING</a>
+                  <!-- Submenu -->
+                  <div class="submenu__caruousel">
+                     <ul class="carousel__menu carousel__menu--small">
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Trailer Biomutant</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-14.jpeg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.5</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Analisis Little Nightmares 2</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-15.jpg" alt="imagen submenu2">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">6.0</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Chivalry 2 Gameplay</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-16.jpg" alt="imagen submenu3">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">8.7</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Red Dead Redemption 2</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-17.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">5.4</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item">
+                           <div class="item__container-img">
+                              <div class="carousel__detail">
+                                 <h3 class="carousel__title">
+                                    <a class="carousel__link" href="#">Riders Republic</a>
+                                 </h3>
+                              </div>
+                              <img class="carousel__img" src="./assets/img/game-18.jpg" alt="imagen submenu1">
+                              <div class="carousel__container-rating">
+                                 <p class="container-rating__mark">7.1</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+            <form class="navbar__search">
+               <input class="search__input" name="search" type="text" placeholder="Buscar...">
+               <div class="navbar__btn-search">
+                  <a class="navbar__button" href="#">
+                     <i class="navbar__icon fa-solid fa-magnifying-glass"></i>
+                  </a>
+               </div>
+            </form>
+         </nav>
+      </section>
+
+      <!-- Maquesina -->
+      <section class="layout__marquee">
+         <h3 class="marquee__header">NO TE LO PIERDAS</h3>
+         <div class="marquee__container">
+            <ul class="marquee__list">
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Multiversus</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Sifu</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Gameplay Chivalry 2</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Michael Acuache</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Dota 2</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Desarrollador Web</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Ica-Perú</a>
+                  </h4>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!-- Slider -->
+      <section class="layout__slider">
+         <article class="slider__container slider__container--1">
+            <div class="slider__rating">
+               <p class="rating__mark">6.7</p>
+            </div>
+            <img src="./assets/img/slider-1.jpg" alt="Juego del slider 1">
+            <div class="slider__info">
+               <p class="slider__category">JUEGOS</p>
+               <h3 class="slider__title">
+                  <a class="slider__link-title" href="#">Mejores juegos del 2024</a>
+               </h3>
+            </div>
+         </article>
+         <article class="slider__container slider__container--2">
+            <div class="slider__rating">
+               <p class="rating__mark">7.1</p>
+            </div>
+            <img src="./assets/img/slider-2.jpg" alt="Juego del slider 2">
+            <div class="slider__info">
+               <p class="slider__category">JUEGOS</p>
+               <h3 class="slider__title">
+                  <a class="slider__link-title" href="#">REVIEW THE LAST OF US 1 REMAKE</a>
+               </h3>
+            </div>
+         </article>
+         <article class="slider__container slider__container--3">
+            <div class="slider__rating">
+               <p class="rating__mark">9.6</p>
+            </div>
+            <img src="./assets/img/slider-3.jpeg" alt="Juego del slider 3">
+            <div class="slider__info">
+               <p class="slider__category">NOVEDADES</p>
+               <h3 class="slider__title">
+                  <a class="slider__link-title" href="#">MICROSOFT COMPRA ACTIVISION</a>
+               </h3>
+            </div>
+         </article>
+         <article class="slider__container slider__container--4">
+            <div class="slider__rating">
+               <p class="rating__mark">5.9</p>
+            </div>
+            <img src="./assets/img/slider-4.jpg" alt="Juego del slider 4">
+            <div class="slider__info">
+               <p class="slider__category">JUEGOS</p>
+               <h3 class="slider__title">
+                  <a class="slider__link-title" href="#">REVIEW BATTEFIELD 2042</a>
+               </h3>
+            </div>
+         </article>
+         <article class="slider__container slider__container--5">
+            <div class="slider__rating">
+               <p class="rating__mark">8.0</p>
+            </div>
+            <img src="./assets/img/slider-5.png" alt="Juego del slider 5">
+            <div class="slider__info">
+               <p class="slider__category">NOVEDADES</p>
+               <h3 class="slider__title">
+                  <a class="slider__link-title" href="#">MEJORES SKINS DE VALORANTE</a>
+               </h3>
+            </div>
+         </article>
+      </section>
+
+      <!-- Mejores momentos de los juegos -->
+      <section class="layout__highlights">
+         <header class="highlights__subheader">
+            <h3 class="subheader__title">MEJORES MOMENTOS DE LOS JUEGOS</h3>
+         </header>
+         <div class="highlights__posts">
+            <article class="highlights__post">
+               <div class="highlights__container-image">
+                  <img class="highlights__img" src="./assets/img/highlight-2.jpg" alt="Imagen de highlights 1">
+                  <h5 class="highlights__category">Juegos</h5>
+               </div>
+               <div class="highlights__detail">
+                  <h3 class="highlights__title">
+                     <a class="highlights__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                  </h3>
+                  <div class="highlights__meta">
+                     <a class="highlights__author" href="#">ACUACHE</a>
+                     <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                  </div>
+                  <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                  <footer class="highlights__footer-post">
+                     <div class="footer-post__container">
+                        <div class="footer-post__views">
+                           <i class="views__icon fa-solid fa-eye"></i>
+                           <p class="views__number">1532</p>
+                        </div>
+                        <div class="footer-post__comments">
+                           <i class="comments__icon fa-solid fa-comment"></i>
+                           <a class="comments__number" href="#">8</a>
+                        </div>
+                     </div>
+                     <div class="footer-post__read-more">
+                        <a class="read-more__btn" href="#">Leer Más</a>
+                     </div>
+                  </footer>
+               </div>
+            </article>
+            <article class="highlights__post">
+               <div class="highlights__container-image">
+                  <img class="highlights__img" src="./assets/img/highlight-1.jpg" alt="Imagen de highlights 2">
+                  <h5 class="highlights__category">Juegos</h5>
+               </div>
+               <div class="highlights__detail">
+                  <h3 class="highlights__title">
+                     <a class="highlights__link" href="#">GOD OF WAR- EL VERDADERO NOMBRE DE ATREUS</a>
+                  </h3>
+                  <div class="highlights__meta">
+                     <a class="highlights__author" href="#">ACUACHE</a>
+                     <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                  </div>
+                  <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                  <footer class="highlights__footer-post">
+                     <div class="footer-post__container">
+                        <div class="footer-post__views">
+                           <i class="views__icon fa-solid fa-eye"></i>
+                           <p class="views__number">1532</p>
+                        </div>
+                        <div class="footer-post__comments">
+                           <i class="comments__icon fa-solid fa-comment"></i>
+                           <a class="comments__number" href="#">8</a>
+                        </div>
+                     </div>
+                     <div class="footer-post__read-more">
+                        <a class="read-more__btn" href="#">Leer Más</a>
+                     </div>
+                  </footer>
+               </div>
+            </article>
+            <article class="highlights__post">
+               <div class="highlights__container-image">
+                  <img class="highlights__img" src="./assets/img/highlight-3.jpg" alt="Imagen de highlights 3">
+                  <h5 class="highlights__category">Juegos</h5>
+               </div>
+               <div class="highlights__detail">
+                  <h3 class="highlights__title">
+                     <a class="highlights__link" href="#">FINAL-THE LAST OF US</a>
+                  </h3>
+                  <div class="highlights__meta">
+                     <a class="highlights__author" href="#">ACUACHE</a>
+                     <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                  </div>
+                  <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                  <footer class="highlights__footer-post">
+                     <div class="footer-post__container">
+                        <div class="footer-post__views">
+                           <i class="views__icon fa-solid fa-eye"></i>
+                           <p class="views__number">1532</p>
+                        </div>
+                        <div class="footer-post__comments">
+                           <i class="comments__icon fa-solid fa-comment"></i>
+                           <a class="comments__number" href="#">8</a>
+                        </div>
+                     </div>
+                     <div class="footer-post__read-more">
+                        <a class="read-more__btn" href="#">Leer Más</a>
+                     </div>
+                  </footer>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Últimos Videos -->
+      <section class="layout__videos">
+         <header class="videos__subheader">
+            <h3 class="subheader__title">ÚLTIMOS VIDEOS</h3>
+         </header>
+         <div class="videos__container">
+            <div class="videos__main-video">
+               <div class="main-video__yt-video">
+                  <iframe class="video___iframe" src="https://www.youtube.com/embed/-cSFPIwMEq4?si=mI7YgvberPwN-IED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+               <div class="main-video__detail">
+                  <h3 class="main-video__title">TRAILER DOTA 2</h3>
+                  <div class="main-video__info">
+                     <div class="main-video__info-container">
+                        <a class="main-video__author" href="#">MICHAEL ACUACHE</a>
+                        <div class="main-video__views">
+                           <i class="main-video__icon-view fa-solid fa-eye"></i>
+                           <p class="main-video__number-views">265478</p>
+                        </div>
+                        <div class="main-video__comments">
+                           <i class="main-video__icon-comments fa-solid fa-comment"></i>
+                           <a class="main-video__number-comments" href="#">3541</a>
+                        </div>
+                     </div>
+                     <span class="main-video__date">JUNIO 03, 2025</span>
+                  </div>
+               </div>
+            </div>
+            <div class="videos__list">
+               <article class="videos__video">
+                  <div class="video__detail">
+                     <h4 class="video__title">
+                        <a class="video__link" href="#">Top 10 mejores juegos del 2025</a>
+                     </h4>
+                     <div class="video__info">
+                        <a class="video__author" href="">EUROGAMERSPAIN</a>
+                        <span class="video__date"> ENERO 27, 2025</span>
+                     </div>
+                  </div>
+                  <div class="video__container-img">
+                     <img class="video__img" src="./assets/img/latest-video-1.jpeg" alt="Imagen Alternativo 1">
+                  </div>
+               </article>
+               <article class="videos__video">
+                  <div class="video__detail">
+                     <h4 class="video__title">
+                        <a class="video__link" href="#">Trailer Fifa 23</a>
+                     </h4>
+                     <div class="video__info">
+                        <a class="video__author" href="">EA</a>
+                        <span class="video__date"> MARZO 13, 2025</span>
+                     </div>
+                  </div>
+                  <div class="video__container-img">
+                     <img class="video__img" src="./assets/img/latest-video-2.png" alt="Imagen Alternativo 2">
+                  </div>
+               </article>
+               <article class="videos__video">
+                  <div class="video__detail">
+                     <h4 class="video__title">
+                        <a class="video__link" href="#">Trailer Elden Ring</a>
+                     </h4>
+                     <div class="video__info">
+                        <a class="video__author" href="">FRONT SOFTWARE</a>
+                        <span class="video__date"> JUNIO 11, 2025</span>
+                     </div>
+                  </div>
+                  <div class="video__container-img">
+                     <img class="video__img" src="./assets/img/latest-video-3.gif" alt="Imagen Alternativo 3">
+                  </div>
+               </article>
+               <article class="videos__video">
+                  <div class="video__detail">
+                     <h4 class="video__title">
+                        <a class="video__link" href="#">Trailer Howarts Legacy</a>
+                     </h4>
+                     <div class="video__info">
+                        <a class="video__author" href="">WARNER BROS</a>
+                        <span class="video__date"> AGOSTO 23, 2025</span>
+                     </div>
+                  </div>
+                  <div class="video__container-img">
+                     <img class="video__img" src="./assets/img/latest-video-4.webp" alt="Imagen Alternativo 4">
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <!-- Carrusel de juegos  -->
+      <section class="layout__carousel-games">
+         <article class="carousel-games__game">
+            <div class="carousel-games__rating">
+               <p class="carousel-games__mark">7.5</p>
+            </div>
+            <img src="./assets/img/carrusel-games-1.jpg" alt="Imagen n°1 del carrusel">
+            <div class="carousel-games__info">
+               <a class="carousel-games__category" href="#">JUEGOS</a>
+               <h2 class="carousel-games__title">
+                  <a class="carousel-games__link" href="#">Borderlands: The Pre-Sequel</a>
+               </h2>
+            </div>
+         </article>
+         <article class="carousel-games__game">
+            <div class="carousel-games__rating">
+               <p class="carousel-games__mark">9.2</p>
+            </div>
+            <img src="./assets/img/carrusel-games-2.jpg" alt="Imagen n°2 del carrusel">
+            <div class="carousel-games__info">
+               <a class="carousel-games__category" href="#">JUEGOS</a>
+               <h2 class="carousel-games__title">
+                  <a class="carousel-games__link" href="#">Ace Corribat Infinity</a>
+               </h2>
+            </div>
+         </article>
+         <article class="carousel-games__game">
+            <div class="carousel-games__rating">
+               <p class="carousel-games__mark">8.8</p>
+            </div>
+            <img src="./assets/img/carrusel-games-3.jpg" alt="Imagen n°3 del carrusel">
+            <div class="carousel-games__info">
+               <a class="carousel-games__category" href="#">JUEGOS</a>
+               <h2 class="carousel-games__title">
+                  <a class="carousel-games__link" href="#">The Walking Dead: Season Two Episode 2</a>
+               </h2>
+            </div>
+         </article>
+         <article class="carousel-games__game">
+            <div class="carousel-games__rating">
+               <p class="carousel-games__mark">9.1</p>
+            </div>
+            <img src="./assets/img/carrusel-games-4.jpg" alt="Imagen n°4 del carrusel">
+            <div class="carousel-games__info">
+               <a class="carousel-games__category" href="#">JUEGOS</a>
+               <h2 class="carousel-games__title">
+                  <a class="carousel-games__link" href="#">Sherlock Holmes: Crimes & Punishments</a>
+               </h2>
+            </div>
+         </article>
+      </section>
+
+      <!-- Contenido Principal -->
+      <main class="layout__main">
+         <!-- Barra lateral Izquierda -->
+         <div class="main__left">
+            <!-- Noticias -->
+            <section class="main__news">
+               <header class="news__subheader">
+                  <h3 class="news__title">NOTICIAS</h3>
+               </header>
+               <div class="news__posts">
+                  <article class="news__main-posts">
+                     <div class="highlights__container-image">
+                        <img class="main-posts__img" src="./assets/img/news-1.jpg" alt="Imagen de highlights 1">
+                        <h5 class="main-posts__category">Juegos</h5>
+                     </div>
+                     <div class="main-posts__info">
+                        <h3 class="main-posts__title">
+                           <a class="main-posts__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                        </h3>
+                        <div class="main-posts__meta">
+                           <a class="main-posts__author" href="#">ACUACHE</a>
+                           <p class="main-posts__date">SETIEMPRE 21, 2025</p>
+                        </div>
+                        <p class="main-posts__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="main-posts__footer">
+                           <div class="main-footer__container">
+                              <div class="main-footer__views">
+                                 <i class="main-views__icon fa-solid fa-eye"></i>
+                                 <p class="main-views__number">1532</p>
+                              </div>
+                              <div class="main-footer-post__comments">
+                                 <i class="main-comments__icon fa-solid fa-comment"></i>
+                                 <a class="main-comments__number" href="#">8</a>
+                              </div>
+                           </div>
+                           <div class="main-footer__read-more">
+                              <a class="main-read-more__btn" href="#">Leer Más</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </article>
+                  <div class="news__list">
+                     <article class="news__video">
+                        <div class="news__detail">
+                           <h4 class="news__title">
+                              <a class="news__link" href="#">Lanzamientos más esperados para el 2024</a>
+                           </h4>
+                           <div class="news__info">
+                              <a class="news__author" href="">ACUACHE</a>
+                              <span class="news__date">FEBRERO 23, 2025</span>
+                           </div>
+                        </div>
+                        <div class="news__container-img">
+                           <img class="news__img" src="./assets/img/news-2.jpg" alt="Imagen Alternativo 4">
+                        </div>
+                     </article>
+                     <article class="news__video">
+                        <div class="news__detail">
+                           <h4 class="news__title">
+                              <a class="news__link" href="#">Requisitos minimos para FIFA 23 para PC</a>
+                           </h4>
+                           <div class="news__info">
+                              <a class="news__author" href="">ACUACHE</a>
+                              <span class="news__date">ABRIL 23, 2025</span>
+                           </div>
+                        </div>
+                        <div class="news__container-img">
+                           <img class="news__img" src="./assets/img/news-3.jpg" alt="Imagen Alternativo 4">
+                        </div>
+                     </article>
+                     <article class="news__video">
+                        <div class="news__detail">
+                           <h4 class="news__title">
+                              <a class="news__link" href="#">Especificaciones de la PS5 confirmadas</a>
+                           </h4>
+                           <div class="news__info">
+                              <a class="news__author" href="">ACUACHE</a>
+                              <span class="news__date"> JULIO 14, 2025</span>
+                           </div>
+                        </div>
+                        <div class="news__container-img">
+                           <img class="news__img" src="./assets/img/news-4.jpg" alt="Imagen Alternativo 4">
+                        </div>
+                     </article>
+                     <article class="news__video">
+                        <div class="news__detail">
+                           <h4 class="news__title">
+                              <a class="news__link" href="#">Spider-Man saldrá para PC</a>
+                           </h4>
+                           <div class="news__info">
+                              <a class="news__author" href="">ACUACHE</a>
+                              <span class="news__date"> DICIEMBRE, 2025</span>
+                           </div>
+                        </div>
+                        <div class="news__container-img">
+                           <img class="news__img" src="./assets/img/news-5.jpg" alt="Imagen Alternativo 4">
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Juegos -->
+            <section class="main__games">
+               <header class="games__subheader">
+                  <h3 class="subheader__title">JUEGOS</h3>
+               </header>
+               <div class="games__container">
+                  <article class="games__game">
+                     <div class="game_container-title"> 
+                        <h3 class="game__title">
+                           <a class="game__link" href="#">ANALISIS DEL NUEVO FARCRY 6</a>
+                        </h3>
+                     </div>
+                     <div class="game__rating">
+                        <span class="game__marke">8.7</span>
+                     </div>
+                     <div class="game__category">
+                        <p class="game__category-title">Juegos</p>
+                     </div>
+                     <img class="game__img" src="./assets/img/main-game-1.jpg" alt="Imagen de juegos n°1">
+                  </article>
+                  <article class="games__game">
+                     <div class="game_container-title"> 
+                        <h3 class="game__title">
+                           <a class="game__link" href="#">¿COMO ES LA PS5 POR DENTRO?</a>
+                        </h3>
+                     </div>
+                     <div class="game__rating">
+                        <span class="game__marke">8.2</span>
+                     </div>
+                     <div class="game__category">
+                        <p class="game__category-title">Juegos</p>
+                     </div>
+                     <img class="game__img" src="./assets/img/main-game-2.jpg" alt="Imagen de juegos n°1">
+                  </article>
+                  <article class="games__game">
+                     <div class="game_container-title"> 
+                        <h3 class="game__title">
+                           <a class="game__link" href="#">¿COMO ES LA XBOX POR DENTRO?</a>
+                        </h3>
+                     </div>
+                     <div class="game__rating">
+                        <span class="game__marke">6.7</span>
+                     </div>
+                     <div class="game__category">
+                        <p class="game__category-title">Juegos</p>
+                     </div>
+                     <img class="game__img" src="./assets/img/main-game-3.jpg" alt="Imagen de juegos n°1">
+                  </article>
+                  <article class="games__game">
+                     <div class="game_container-title"> 
+                        <h3 class="game__title">
+                           <a class="game__link" href="#">¿COMO ES LA SWITCH POR DENTRO?</a>
+                        </h3>
+                     </div>
+                     <div class="game__rating">8.1</span>
+                     </div>
+                     <div class="game__category">
+                        <p class="game__category-title">Juegos</p>
+                     </div>
+                     <img class="game__img" src="./assets/img/main-game-4.jpg" alt="Imagen de juegos n°1">
+                  </article>
+               </div>
+            </section>
+
+            <!-- Últimos Articulos -->
+            <section class="main__posts">
+               <header class="posts__subheader">
+                  <h3 class="subheader__title">ÚLTIMOS ARTICULOS</h3>
+               </header>
+               <div class="posts__container-post">
+                  <article class="highlights__post posts--post">
+                     <div class="highlights__container-image">
+                        <img class="highlights__img" src="./assets/img/highlight-2.jpg" alt="Imagen de highlights 1">
+                        <h5 class="highlights__category">Juegos</h5>
+                     </div>
+                     <div class="highlights__detail">
+                        <h3 class="highlights__title">
+                           <a class="highlights__link" href="#">ANALISIS DEL NUEVO FARCRY 6</a>
+                        </h3>
+                        <div class="highlights__meta">
+                           <a class="highlights__author" href="#">ACUACHE</a>
+                           <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                        </div>
+                        <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="highlights__footer-post">
+                           <div class="footer-post__container">
+                              <div class="footer-post__views">
+                                 <i class="views__icon fa-solid fa-eye"></i>
+                                 <p class="views__number">1532</p>
+                              </div>
+                              <div class="footer-post__comments">
+                                 <i class="comments__icon fa-solid fa-comment"></i>
+                                 <a class="comments__number" href="#">8</a>
+                              </div>
+                           </div>
+                           <div class="footer-post__read-more">
+                              <a class="read-more__btn" href="#">Leer Más</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </article>
+                  <article class="highlights__post posts--post">
+                     <div class="highlights__container-image">
+                        <img class="highlights__img" src="./assets/img/carrusel-games-4.jpg" alt="Imagen de highlights 1">
+                        <h5 class="highlights__category">Juegos</h5>
+                     </div>
+                     <div class="highlights__detail">
+                        <h3 class="highlights__title">
+                           <a class="highlights__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                        </h3>
+                        <div class="highlights__meta">
+                           <a class="highlights__author" href="#">ACUACHE</a>
+                           <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                        </div>
+                        <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="highlights__footer-post">
+                           <div class="footer-post__container">
+                              <div class="footer-post__views">
+                                 <i class="views__icon fa-solid fa-eye"></i>
+                                 <p class="views__number">1532</p>
+                              </div>
+                              <div class="footer-post__comments">
+                                 <i class="comments__icon fa-solid fa-comment"></i>
+                                 <a class="comments__number" href="#">8</a>
+                              </div>
+                           </div>
+                           <div class="footer-post__read-more">
+                              <a class="read-more__btn" href="#">Leer Más</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </article>
+                  <article class="highlights__post posts--post">
+                     <div class="highlights__container-image">
+                        <img class="highlights__img" src="./assets/img/game-17.jpg" alt="Imagen de highlights 1">
+                        <h5 class="highlights__category">Juegos</h5>
+                     </div>
+                     <div class="highlights__detail">
+                        <h3 class="highlights__title">
+                           <a class="highlights__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                        </h3>
+                        <div class="highlights__meta">
+                           <a class="highlights__author" href="#">ACUACHE</a>
+                           <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                        </div>
+                        <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="highlights__footer-post">
+                           <div class="footer-post__container">
+                              <div class="footer-post__views">
+                                 <i class="views__icon fa-solid fa-eye"></i>
+                                 <p class="views__number">1532</p>
+                              </div>
+                              <div class="footer-post__comments">
+                                 <i class="comments__icon fa-solid fa-comment"></i>
+                                 <a class="comments__number" href="#">8</a>
+                              </div>
+                           </div>
+                           <div class="footer-post__read-more">
+                              <a class="read-more__btn" href="#">Leer Más</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </article>
+                  <article class="highlights__post posts--post">
+                     <div class="highlights__container-image">
+                        <img class="highlights__img" src="./assets/img/main-game-4.jpg" alt="Imagen de highlights 1">
+                        <h5 class="highlights__category">Juegos</h5>
+                     </div>
+                     <div class="highlights__detail">
+                        <h3 class="highlights__title">
+                           <a class="highlights__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                        </h3>
+                        <div class="highlights__meta">
+                           <a class="highlights__author" href="#">ACUACHE</a>
+                           <p class="highlights__date">SETIEMPRE 21, 2025</p>
+                        </div>
+                        <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="highlights__footer-post">
+                           <div class="footer-post__container">
+                              <div class="footer-post__views">
+                                 <i class="views__icon fa-solid fa-eye"></i>
+                                 <p class="views__number">1532</p>
+                              </div>
+                              <div class="footer-post__comments">
+                                 <i class="comments__icon fa-solid fa-comment"></i>
+                                 <a class="comments__number" href="#">8</a>
+                              </div>
+                           </div>
+                           <div class="footer-post__read-more">
+                              <a class="read-more__btn" href="#">Leer Más</a>
+                           </div>
+                        </footer>
+                     </div>
+                  </article>
+               </div>
+               <div class="posts__container-btn">
+                  <a class="posts__read-more" href="#">LEER MÁS</a>
+               </div>
+            </section>
+         </div>
+         <!-- Barra lateral Derecha -->
+         <aside class="main__aside">
+            <section class="aside__login">
+               <header class="login__subheader">
+                  <h3 class="subheader__title">INICIAR SESIÓN</h3>
+               </header>
+               <div class="login__container">
+                  <form class="login__from">
+                     <div class="form__container-username">
+                        <label class="form__label" for="username">Usuario:</label>
+                        <input class="form__input" id="username" type="text">
+                     </div>
+                     <div class="form__container-password">
+                        <label class="form__label" for="password">Contraseña:</label>
+                        <input class="form__input" id="password" type="password">
+                     </div>
+                     <div class="form__container-remember">
+                        <input class="form__input-checkbox" name="remember" type="checkbox">
+                        <label class="form__label" for="remember">Recuedame</label>
+                     </div>
+                     <input class="form__submit" type="submit" value="Iniciar sesión">
+                  </form>
+                  <a class="login__register" href="#">Registrate</a>
+                  <a class="login__lost-pass" href="#">Recuperar contraseña</a>
+               </div>
+            </section>
+
+            <section class="aside__socials">
+               <article class="socials__social social--github">
+                  <i class="fa-brands fa-github"></i>
+                  <div class="social__data">
+                     <h4 class="social__users">26.000</h4>
+                     <span class="social__title">Seguidores</span>
+                  </div>
+               </article>
+               <article class="socials__social social--fb">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <div class="social__data">
+                     <h4 class="social__users">26.000</h4>
+                     <span class="social__title">Seguidores</span>
+                  </div>
+               </article>
+               <article class="socials__social social--yt">
+                  <i class="fa-brands fa-youtube"></i>
+                  <div class="social__data">
+                     <h4 class="social__users">26.000</h4>
+                     <span class="social__title">Seguidores</span>
+                  </div>
+               </article>
+               <article class="socials__social social--ig">
+                  <i class="fa-brands fa-instagram"></i>
+                  <div class="social__data">
+                     <h4 class="social__users">26.000</h4>
+                     <span class="social__title">Seguidores</span>
+                  </div>
+               </article>
+               <article class="socials__social social--portafolio">
+                  <div class="social__data">
+                     <i class="fa-solid fa-code"></i>
+                     <h4 class="social__portafolio">Ver Portafolio</h4>
+                  </div>
+                  <p class="social__description">@MichaelAcuache Desarrollador Web  </p>
+               </article>
+            </section>
+
+            <section class="aside__recent">
+               <header class="recent__subheader">
+                  <h3 class="recent__title">RECIENTE</h3>
+               </header>
+               <div class="recent__new">
+                  <article class="recent__info">
+                     <div class="recent__container-img">
+                        <img class="recent__img" src="./assets/img/recent-1.jpg" alt="Imagen de recent n° 1">
+                     </div>
+                     <div class="recent__recent-container">
+                        <h3 class="recent__subtitle">
+                           <a class="recent__link" href="#">Mejor juego del año</a>
+                        </h3>
+                        <div class="recent__data">
+                           <h5 class="recent__author">ACUACHE</h5>
+                           <div class="recent__details">
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-eye"></i>
+                                 <span class="recent__number">11120</span>
+                              </div>
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-comment"></i>
+                                 <span class="recent__number">84</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="recent__info">
+                     <div class="recent__container-img">
+                        <img class="recent__img" src="./assets/img/recent-2.jpg" alt="Imagen de recent n° 2">
+                     </div>
+                     <div class="recent__recent-container">
+                        <h3 class="recent__subtitle">
+                           <a class="recent__link" href="#">Analisis GTA IV</a>
+                        </h3>
+                        <div class="recent__data">
+                           <h5 class="recent__author">ACUACHE</h5>
+                           <div class="recent__details">
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-eye"></i>
+                                 <span class="recent__number">11120</span>
+                              </div>
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-comment"></i>
+                                 <span class="recent__number">84</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="recent__info">
+                     <div class="recent__container-img">
+                        <img class="recent__img" src="./assets/img/recent-3.jpg" alt="Imagen de recent n° 3">
+                     </div>
+                     <div class="recent__recent-container">
+                        <h3 class="recent__subtitle">
+                           <a class="recent__link" href="#">Analisis WWE 2k24</a>
+                        </h3>
+                        <div class="recent__data">
+                           <h5 class="recent__author">ACUACHE</h5>
+                           <div class="recent__details">
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-eye"></i>
+                                 <span class="recent__number">11120</span>
+                              </div>
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-comment"></i>
+                                 <span class="recent__number">84</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="recent__info">
+                     <div class="recent__container-img">
+                        <img class="recent__img" src="./assets/img/recent-4.jpg" alt="Imagen de recent n° 4">
+                     </div>
+                     <div class="recent__recent-container">
+                        <h3 class="recent__subtitle">
+                           <a class="recent__link" href="#">El juego más esperado del año</a>
+                        </h3>
+                        <div class="recent__data">
+                           <h5 class="recent__author">ACUACHE</h5>
+                           <div class="recent__details">
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-eye"></i>
+                                 <span class="recent__number">11120</span>
+                              </div>
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-comment"></i>
+                                 <span class="recent__number">84</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="recent__info">
+                     <div class="recent__container-img">
+                        <img class="recent__img" src="./assets/img/recent-5.jpg" alt="Imagen de recent n° 5">
+                     </div>
+                     <div class="recent__recent-container">
+                        <h3 class="recent__subtitle">
+                           <a class="recent__link" href="#">Analisis Mortal Kombat 11</a>
+                        </h3>
+                        <div class="recent__data">
+                           <h5 class="recent__author">ACUACHE</h5>
+                           <div class="recent__details">
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-eye"></i>
+                                 <span class="recent__number">11120</span>
+                              </div>
+                              <div class="recent__detail">
+                                 <i class="recent__icon fa-solid fa-comment"></i>
+                                 <span class="recent__number">84</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </section>
+
+            <section class="aside__reviews">
+               <header class="reviews__subheader">
+                  <h3 class="subheader__title">ÚLTIMAS WEVIEWS</h3>
+               </header>
+               <div class="reviews__container">
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de WWE 2K24</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--1"></div>
+                     </div>
+                  </article>
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de Days Gone</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--2"></div>
+                     </div>
+                  </article>
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de Dota 2</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--3"></div>
+                     </div>
+                  </article>
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de NFS Most Wanted</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--4"></div>
+                     </div>
+                  </article>
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de Tekken 8</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--5"></div>
+                     </div>
+                  </article>
+                  <article class="reviews__review">
+                     <div class="review__data">
+                        <h4 class="reviw__title">
+                           <a class="review__link" href="#">Review de Battlefield 4</a>
+                        </h4>
+                        <span class="review__rating">7.5</span>
+                     </div>
+                     <div class="review__bars">
+                        <div class="review__fill fill--6"></div>
+                     </div>
+                  </article>
+               </div>
+            </section>
+         </aside>
+      </main>
+   </div>
+
+   <!-- Pie de página -->
+   <footer class="layout__footer">
+      <section class="footer__about">
+         <div class="about__info">
+            <h3 class="info__info">Sobre mi</h3>
+            <p class="info__description">Soy un Desarrollador Web apasionado en crear soluciones de manera eficiente y estrategica</p>
+         </div>
+         <div class="about__tags">
+            <ul class="tags__list">
+               <li class="tags__tag">
+                  <p class="tag__name">Trabajo en equipo</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Ica</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Perú</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Ing. Sistemas</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Maquetado web</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Autodidacta</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">En formación</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Adaptable</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Aprendiz rápido</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">En búsqueda de oportunidades</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Resolutivo</p>
+               </li>
+               <li class="tags__tag">
+                  <p class="tag__name">Comprometido</p>
+               </li>
+            </ul>
+         </div>   
+      </section>
+      <div class="footer__information">
+         <div class="footer__container-img">
+            <img class="footer__img" src="./assets/img/logoAc.png" alt="Logo de Acuache">
+         </div>
+         <h2 class="footer__author">Acuache</h2>
+      </div>
+   </footer>
+   <div class="">
+      <p>&copy; Copyright 2025. Todos los derechos reservados a Michael Acuache Yalle</p>
+   </div>
 </body>
 </html>
