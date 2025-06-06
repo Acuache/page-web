@@ -383,7 +383,9 @@
 
       <!-- Maquesina -->
       <section class="layout__marquee">
-         <h3 class="marquee__header">NO TE LO PIERDAS</h3>
+         <div class="marquee__title-container">
+            <h3 class="marquee__header">NO TE LO PIERDAS</h3>
+         </div>
          <div class="marquee__container">
             <ul class="marquee__list">
                <li class="marquee__item">
@@ -421,17 +423,22 @@
                      <a class="marquee__link" href="#"><span>+</span> Ica-Perú</a>
                   </h4>
                </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Autodidacta</a>
+                  </h4>
+               </li>
             </ul>
          </div>
       </section>
 
       <!-- Slider -->
       <section class="layout__slider">
-         <article class="slider__container slider__container--1">
+         <article class="slider__container slider--1">
             <div class="slider__rating">
                <p class="rating__mark">6.7</p>
             </div>
-            <img src="./assets/img/slider-1.jpg" alt="Juego del slider 1">
+            <img class="slider__img" src="./assets/img/slider-1.jpg" alt="Juego del slider 1">
             <div class="slider__info">
                <p class="slider__category">JUEGOS</p>
                <h3 class="slider__title">
@@ -439,11 +446,11 @@
                </h3>
             </div>
          </article>
-         <article class="slider__container slider__container--2">
+         <article class="slider__container slider--2">
             <div class="slider__rating">
                <p class="rating__mark">7.1</p>
             </div>
-            <img src="./assets/img/slider-2.jpg" alt="Juego del slider 2">
+            <img class="slider__img" src="./assets/img/slider-2.jpg" alt="Juego del slider 2">
             <div class="slider__info">
                <p class="slider__category">JUEGOS</p>
                <h3 class="slider__title">
@@ -451,11 +458,11 @@
                </h3>
             </div>
          </article>
-         <article class="slider__container slider__container--3">
+         <article class="slider__container slider--3">
             <div class="slider__rating">
                <p class="rating__mark">9.6</p>
             </div>
-            <img src="./assets/img/slider-3.jpeg" alt="Juego del slider 3">
+            <img class="slider__img" src="./assets/img/slider-3.jpeg" alt="Juego del slider 3">
             <div class="slider__info">
                <p class="slider__category">NOVEDADES</p>
                <h3 class="slider__title">
@@ -463,11 +470,11 @@
                </h3>
             </div>
          </article>
-         <article class="slider__container slider__container--4">
+         <article class="slider__container slider--4">
             <div class="slider__rating">
                <p class="rating__mark">5.9</p>
             </div>
-            <img src="./assets/img/slider-4.jpg" alt="Juego del slider 4">
+            <img class="slider__img" src="./assets/img/slider-4.jpg" alt="Juego del slider 4">
             <div class="slider__info">
                <p class="slider__category">JUEGOS</p>
                <h3 class="slider__title">
@@ -475,11 +482,11 @@
                </h3>
             </div>
          </article>
-         <article class="slider__container slider__container--5">
+         <article class="slider__container slider--5">
             <div class="slider__rating">
                <p class="rating__mark">8.0</p>
             </div>
-            <img src="./assets/img/slider-5.png" alt="Juego del slider 5">
+            <img class="slider__img" src="./assets/img/slider-5.png" alt="Juego del slider 5">
             <div class="slider__info">
                <p class="slider__category">NOVEDADES</p>
                <h3 class="slider__title">
@@ -742,92 +749,92 @@
                   <h3 class="news__title">NOTICIAS</h3>
                </header>
                <div class="news__posts">
-                  <article class="news__main-posts">
+                  <article class="highlights__post post--main-video">
                      <div class="highlights__container-image">
-                        <img class="main-posts__img" src="./assets/img/news-1.jpg" alt="Imagen de highlights 1">
-                        <h5 class="main-posts__category">Juegos</h5>
+                        <img class="highlights__img" src="./assets/img/highlight-2.jpg" alt="Imagen de highlights 1">
+                        <h5 class="highlights__category">Juegos</h5>
                      </div>
-                     <div class="main-posts__info">
-                        <h3 class="main-posts__title">
-                           <a class="main-posts__link" href="#">MEJOR JUEGO DE TODOS LOS TIEMPOS</a>
+                     <div class="highlights__detail">
+                        <h3 class="highlights__title">
+                           <a class="highlights__link" href="#">ANALISIS DEL NUEVO FARCRY 6</a>
                         </h3>
-                        <div class="main-posts__meta">
-                           <a class="main-posts__author" href="#">ACUACHE</a>
-                           <p class="main-posts__date">SETIEMPRE 21, 2025</p>
+                        <div class="highlights__meta">
+                           <a class="highlights__author" href="#">ACUACHE</a>
+                           <p class="highlights__date">SETIEMPRE 21, 2025</p>
                         </div>
-                        <p class="main-posts__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
-                        <footer class="main-posts__footer">
-                           <div class="main-footer__container">
-                              <div class="main-footer__views">
-                                 <i class="main-views__icon fa-solid fa-eye"></i>
-                                 <p class="main-views__number">1532</p>
+                        <p class="highlights__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus explicabo cumque iste illo laudantium. Lorem ipsum dolor sit amet.</p>
+                        <footer class="highlights__footer-post">
+                           <div class="footer-post__container">
+                              <div class="footer-post__views">
+                                 <i class="views__icon fa-solid fa-eye"></i>
+                                 <p class="views__number">1532</p>
                               </div>
-                              <div class="main-footer-post__comments">
-                                 <i class="main-comments__icon fa-solid fa-comment"></i>
-                                 <a class="main-comments__number" href="#">8</a>
+                              <div class="footer-post__comments">
+                                 <i class="comments__icon fa-solid fa-comment"></i>
+                                 <a class="comments__number" href="#">8</a>
                               </div>
                            </div>
-                           <div class="main-footer__read-more">
-                              <a class="main-read-more__btn" href="#">Leer Más</a>
+                           <div class="footer-post__read-more">
+                              <a class="read-more__btn" href="#">Leer Más</a>
                            </div>
                         </footer>
                      </div>
                   </article>
                   <div class="news__list">
-                     <article class="news__video">
-                        <div class="news__detail">
-                           <h4 class="news__title">
-                              <a class="news__link" href="#">Lanzamientos más esperados para el 2024</a>
+                     <article class="videos__video">
+                        <div class="video__detail">
+                           <h4 class="video__title">
+                              <a class="video__link" href="#">Lanzamientos más esperados para el 2024</a>
                            </h4>
-                           <div class="news__info">
-                              <a class="news__author" href="">ACUACHE</a>
-                              <span class="news__date">FEBRERO 23, 2025</span>
+                           <div class="video__info">
+                              <a class="video__author" href="">EUROGAMERSPAIN</a>
+                              <span class="video__date"> ENERO 27, 2025</span>
                            </div>
                         </div>
-                        <div class="news__container-img">
-                           <img class="news__img" src="./assets/img/news-2.jpg" alt="Imagen Alternativo 4">
+                        <div class="video__container-img">
+                           <img class="video__img" src="./assets/img/news-1.jpg" alt="Imagen Alternativo 1">
                         </div>
                      </article>
-                     <article class="news__video">
-                        <div class="news__detail">
-                           <h4 class="news__title">
-                              <a class="news__link" href="#">Requisitos minimos para FIFA 23 para PC</a>
+                     <article class="videos__video">
+                        <div class="video__detail">
+                           <h4 class="video__title">
+                              <a class="video__link" href="#">Requisitos minimos para FIFA 23</a>
                            </h4>
-                           <div class="news__info">
-                              <a class="news__author" href="">ACUACHE</a>
-                              <span class="news__date">ABRIL 23, 2025</span>
+                           <div class="video__info">
+                              <a class="video__author" href="">EUROGAMERSPAIN</a>
+                              <span class="video__date"> ENERO 27, 2025</span>
                            </div>
                         </div>
-                        <div class="news__container-img">
-                           <img class="news__img" src="./assets/img/news-3.jpg" alt="Imagen Alternativo 4">
+                        <div class="video__container-img">
+                           <img class="video__img" src="./assets/img/news-2.jpg" alt="Imagen Alternativo 1">
                         </div>
                      </article>
-                     <article class="news__video">
-                        <div class="news__detail">
-                           <h4 class="news__title">
-                              <a class="news__link" href="#">Especificaciones de la PS5 confirmadas</a>
+                     <article class="videos__video">
+                        <div class="video__detail">
+                           <h4 class="video__title">
+                              <a class="video__link" href="#">Top 10 mejores juegos del 2025</a>
                            </h4>
-                           <div class="news__info">
-                              <a class="news__author" href="">ACUACHE</a>
-                              <span class="news__date"> JULIO 14, 2025</span>
+                           <div class="video__info">
+                              <a class="video__author" href="">EUROGAMERSPAIN</a>
+                              <span class="video__date"> ENERO 27, 2025</span>
                            </div>
                         </div>
-                        <div class="news__container-img">
-                           <img class="news__img" src="./assets/img/news-4.jpg" alt="Imagen Alternativo 4">
+                        <div class="video__container-img">
+                           <img class="video__img" src="./assets/img/news-3.jpg" alt="Imagen Alternativo 1">
                         </div>
                      </article>
-                     <article class="news__video">
-                        <div class="news__detail">
-                           <h4 class="news__title">
-                              <a class="news__link" href="#">Spider-Man saldrá para PC</a>
+                     <article class="videos__video">
+                        <div class="video__detail">
+                           <h4 class="video__title">
+                              <a class="video__link" href="#">Spider-Man saldrá para PC</a>
                            </h4>
-                           <div class="news__info">
-                              <a class="news__author" href="">ACUACHE</a>
-                              <span class="news__date"> DICIEMBRE, 2025</span>
+                           <div class="video__info">
+                              <a class="video__author" href="">EUROGAMERSPAIN</a>
+                              <span class="video__date"> ENERO 27, 2025</span>
                            </div>
                         </div>
-                        <div class="news__container-img">
-                           <img class="news__img" src="./assets/img/news-5.jpg" alt="Imagen Alternativo 4">
+                        <div class="video__container-img">
+                           <img class="video__img" src="./assets/img/news-4.jpg" alt="Imagen Alternativo 1">
                         </div>
                      </article>
                   </div>
@@ -966,9 +973,9 @@
                         </footer>
                      </div>
                   </article>
-                  <article class="highlights__post posts--post">
+                  <article class="highlights__post posts--post ">
                      <div class="highlights__container-image">
-                        <img class="highlights__img" src="./assets/img/game-17.jpg" alt="Imagen de highlights 1">
+                        <img class="highlights__img post--3" src="./assets/img/game-17.jpg" alt="Imagen de highlights 1">
                         <h5 class="highlights__category">Juegos</h5>
                      </div>
                      <div class="highlights__detail">
@@ -1051,7 +1058,7 @@
                         <input class="form__input" id="password" type="password">
                      </div>
                      <div class="form__container-remember">
-                        <input class="form__input-checkbox" name="remember" type="checkbox">
+                        <input class="form__input-checkbox" id="remember" type="checkbox">
                         <label class="form__label" for="remember">Recuedame</label>
                      </div>
                      <input class="form__submit" type="submit" value="Iniciar sesión">
@@ -1091,9 +1098,9 @@
                   </div>
                </article>
                <article class="socials__social social--portafolio">
-                  <div class="social__data">
+                  <div class="social__data data-porta">
                      <i class="fa-solid fa-code"></i>
-                     <h4 class="social__portafolio">Ver Portafolio</h4>
+                     <h4 class="social__portafolio"><a href="#">Ver Portafolio</a></h4>
                   </div>
                   <p class="social__description">@MichaelAcuache Desarrollador Web  </p>
                </article>
@@ -1198,7 +1205,7 @@
                   </article>
                   <article class="recent__info">
                      <div class="recent__container-img">
-                        <img class="recent__img" src="./assets/img/recent-5.jpg" alt="Imagen de recent n° 5">
+                        <img class="recent__img" src="./assets/img/recent-2.jpg" alt="Imagen de recent n° 5">
                      </div>
                      <div class="recent__recent-container">
                         <h3 class="recent__subtitle">
@@ -1243,7 +1250,7 @@
                         <h4 class="reviw__title">
                            <a class="review__link" href="#">Review de Days Gone</a>
                         </h4>
-                        <span class="review__rating">7.5</span>
+                        <span class="review__rating">6.5</span>
                      </div>
                      <div class="review__bars">
                         <div class="review__fill fill--2"></div>
@@ -1254,7 +1261,7 @@
                         <h4 class="reviw__title">
                            <a class="review__link" href="#">Review de Dota 2</a>
                         </h4>
-                        <span class="review__rating">7.5</span>
+                        <span class="review__rating">8.1</span>
                      </div>
                      <div class="review__bars">
                         <div class="review__fill fill--3"></div>
@@ -1265,7 +1272,7 @@
                         <h4 class="reviw__title">
                            <a class="review__link" href="#">Review de NFS Most Wanted</a>
                         </h4>
-                        <span class="review__rating">7.5</span>
+                        <span class="review__rating">5.5</span>
                      </div>
                      <div class="review__bars">
                         <div class="review__fill fill--4"></div>
@@ -1276,7 +1283,7 @@
                         <h4 class="reviw__title">
                            <a class="review__link" href="#">Review de Tekken 8</a>
                         </h4>
-                        <span class="review__rating">7.5</span>
+                        <span class="review__rating">9</span>
                      </div>
                      <div class="review__bars">
                         <div class="review__fill fill--5"></div>
@@ -1287,7 +1294,7 @@
                         <h4 class="reviw__title">
                            <a class="review__link" href="#">Review de Battlefield 4</a>
                         </h4>
-                        <span class="review__rating">7.5</span>
+                        <span class="review__rating">8.4</span>
                      </div>
                      <div class="review__bars">
                         <div class="review__fill fill--6"></div>
@@ -1301,6 +1308,7 @@
 
    <!-- Pie de página -->
    <footer class="layout__footer">
+      <div class="footer__container">
       <section class="footer__about">
          <div class="about__info">
             <h3 class="info__info">Sobre mi</h3>
@@ -1348,14 +1356,15 @@
          </div>   
       </section>
       <div class="footer__information">
-         <div class="footer__container-img">
-            <img class="footer__img" src="./assets/img/logoAc.png" alt="Logo de Acuache">
+         <div class="bg-blur-footer">
+            <div class="footer__container-img">
+               <img class="footer__img" src="./assets/img/logoAc.png" alt="Logo de Acuache">
+            </div>
+            <h2 class="footer__author">Acuache</h2>
          </div>
-         <h2 class="footer__author">Acuache</h2>
+      </div>
       </div>
    </footer>
-   <div class="">
-      <p>&copy; Copyright 2025. Todos los derechos reservados a Michael Acuache Yalle</p>
-   </div>
+   
 </body>
 </html>
