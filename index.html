@@ -14,9 +14,12 @@
    <!-- Cargar estilos -->
    <link rel="stylesheet" href="./assets/css/reset.css">
    <link rel="stylesheet" href="./assets/css/styles.css">
-
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+   
    <!-- Cargar javascript -->
-
+   <script src="./assets/js/main.js" defer></script>
+   <script src="./assets/js/marquee.js" defer></script>
+   <script src="./assets/js/nav-mobile.js" defer></script>
 </head>
 <body>
    <!-- Barra superior decorativa -->
@@ -35,6 +38,66 @@
       <!-- Navegación -->
       <section class="layout__nav">
          <nav class="nav__navbar">
+            <!-- Navegación Movil -->
+            <div class="navbar__mobile-btn">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar__mobile-list">
+               <li class="mobile-list__item">
+                  <div class="mobile-list__container">
+                     <a class="mobile-list__link" href="#">Noticias</a>
+                     <div class="mobile-list__icon" id="icon1">
+                        <i class="fa-solid fa-chevron-down"></i>
+                     </div>
+                  </div>
+                  <!-- Submeno mobile -->
+                  <ul class="mobile-list__msubmenu" id="submenu1">
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">VIDEOJUEGOS</a>
+                     </li>
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">NOVEDADES</a>
+                     </li>
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">OTROS</a>
+                        <!-- Submenu del submenu -->
+                     </li>
+                  </ul>
+               </li>
+               <li class="mobile-list__item">
+                  <a class="mobile-list__link" href="#">ANALISIS</a>
+               </li>
+               <li class="mobile-list__item">
+                  <a class="mobile-list__link" href="#">JUEGOS</a>
+               </li>
+               <li class="mobile-list__item">
+                  <div class="mobile-list__container">
+                     <a class="mobile-list__link" href="#">CATEGORIAS</a>
+                     <div class="mobile-list__icon" id="icon1">
+                        <i class="fa-solid fa-chevron-down"></i>
+                     </div>
+                  </div>
+                  <!-- Submeno mobile -->
+                  <ul class="mobile-list__msubmenu" id="submenu2">
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">ACCIÓN</a>
+                     </li>
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">SANDBOX</a>
+                     </li>
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">LUCHA</a>
+                     </li>
+                     <li class="msubmenu__item">
+                        <a class="msubmenu__ink" href="#">CARRERAS</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="mobile-list__item">
+                  <a class="mobile-list__link" href="#">RANKING</a>
+               </li>
+            </ul>
+            <!-- Navegación Escritorio -->
             <ul class="navbar__list">
                <li class="navbar__item">
                   <a class="navbar__link navbar__link-noticias" href="#">NOTICIAS</a>
@@ -428,6 +491,46 @@
                      <a class="marquee__link" href="#"><span>+</span> Autodidacta</a>
                   </h4>
                </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Multiversus</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Sifu</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Gameplay Chivalry 2</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Michael Acuache</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Análisis Dota 2</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Desarrollador Web</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Ica-Perú</a>
+                  </h4>
+               </li>
+               <li class="marquee__item">
+                  <h4 class="marquee__title">
+                     <a class="marquee__link" href="#"><span>+</span> Autodidacta</a>
+                  </h4>
+               </li>
             </ul>
          </div>
       </section>
@@ -689,7 +792,7 @@
 
       <!-- Carrusel de juegos  -->
       <section class="layout__carousel-games">
-         <article class="carousel-games__game">
+         <article class="carousel-games__game games__game--1">
             <div class="carousel-games__rating">
                <p class="carousel-games__mark">7.5</p>
             </div>
@@ -701,7 +804,7 @@
                </h2>
             </div>
          </article>
-         <article class="carousel-games__game">
+         <article class="carousel-games__game games__game--2">
             <div class="carousel-games__rating">
                <p class="carousel-games__mark">9.2</p>
             </div>
@@ -713,7 +816,7 @@
                </h2>
             </div>
          </article>
-         <article class="carousel-games__game">
+         <article class="carousel-games__game games__game--3">
             <div class="carousel-games__rating">
                <p class="carousel-games__mark">8.8</p>
             </div>
@@ -725,7 +828,7 @@
                </h2>
             </div>
          </article>
-         <article class="carousel-games__game">
+         <article class="carousel-games__game games__game--4">
             <div class="carousel-games__rating">
                <p class="carousel-games__mark">9.1</p>
             </div>
