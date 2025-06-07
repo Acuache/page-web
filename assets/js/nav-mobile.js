@@ -29,4 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  window.addEventListener("resize", () => {
+    let width = parseInt(document.body.clientWidth);
+    if (width > 768) {
+      navbar.style.maxHeight = "0";
+      navbar.style.padding = "0";
+      icon.classList.remove("visible");
+    }
+  });
 });
